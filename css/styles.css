@@ -1,4 +1,6 @@
 /* VARIÁVEIS DE TEMA */
+
+/* LIGHT MODE */
 :root {
   --bg: #f6f1e9;
   --sky: #52796f;
@@ -50,7 +52,7 @@ header {
   color: var(--text);
 }
 
-/* FILTROS */
+/* FILTRO DO TEMA */
 .filter-btn {
   border: none;
   background: none;
@@ -61,7 +63,7 @@ header {
   background: rgba(163, 177, 138, 0.3);
 }
 
-/* DARK MODE - FILTROS */
+/* FILTROS: DARK MODE */
 body.dark .filter-btn {
   color: var(--text);
 }
@@ -92,9 +94,7 @@ body.dark .filter-btn:hover {
   box-shadow: 5px 5px 10px var(--sky);
 }
 
-/* MODAL */
-
-/* BASE */
+/* CARD MODAL PADRÃO */
 .ghibli-modal {
   background: #fdfaf6;
   border-radius: 20px;
@@ -119,7 +119,7 @@ body.dark .filter-btn:hover {
   opacity: 0.9;
 }
 
-/* DARK MODE - MODAL */
+/* CARD MODAL: DARK MODE */
 body.dark .ghibli-modal {
   background: rgba(15, 15, 15, 0.9);
 }
@@ -203,7 +203,7 @@ body.dark footer {
   color: #ccc;
 }
 
-/* RESPONSIVO (MOBILE) */
+/* QUERY RESPONSIVO (MOBILE) */
 @media (max-width: 768px) {
   .modal-body {
     display: flex;

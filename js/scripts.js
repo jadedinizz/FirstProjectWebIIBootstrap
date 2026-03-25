@@ -30,7 +30,9 @@ const modal = new bootstrap.Modal(document.getElementById("imageModal"));
 const modalImage = document.getElementById("modalImage");
 const modalCaption = document.getElementById("modalCaption");
 
-// pega apenas imagens visíveis
+// Precisa dessa função para pegar as imagens da filtragem, se deixar constante sempre vai passar todas as imagens
+
+// pega apenas imagens visíveis daquela filtragem 
 function getVisibleImages() {
     return Array.from(document.querySelectorAll(".gallery-item:not(.hidden) .gallery-img"));
 }
@@ -50,7 +52,7 @@ document.querySelectorAll(".gallery-img").forEach(img => {
     });
 });
 
-// atualiza modal
+// atualiza modal conforme for passando a imagem
 function updateModal() {
     const img = currentImages[currentIndex];
 
@@ -73,15 +75,11 @@ function prevImage() {
     currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
     updateModal();
 }
-
-
-
 // ==========================
 // BOTÕES
 // ==========================
 document.getElementById("nextBtn").addEventListener("click", nextImage);
 document.getElementById("prevBtn").addEventListener("click", prevImage);
-
 // ==========================
 // DARK MODE
 // ==========================
@@ -96,7 +94,6 @@ toggle.addEventListener("click", () => {
     // muda ícone 🌙/☀️
     toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
-
 // ==========================
 // Folha e chuva caindo #criativdade
 // ==========================
