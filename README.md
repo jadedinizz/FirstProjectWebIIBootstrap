@@ -1,6 +1,6 @@
 # Galeria Mundo Ghibli
 
-Este projeto foi desenvolvido na disciplina de **Web 2** e consiste em uma **Galeria de Imagens com Filtros** utilizando o framework Bootstrap. A galeria apresenta categorias filtráveis, efeitos hover nos cards, e um modal interativo para visualização ampliada das imagens, com navegação entre elas.
+Este projeto foi desenvolvido na disciplina de **Web II** e consiste em uma **Galeria de Imagens com Filtros** utilizando o framework Bootstrap. A galeria apresenta categorias filtráveis, efeitos hover nos cards, e um modal interativo para visualização ampliada das imagens, com navegação entre elas.
 
 ## Funcionalidades
 
