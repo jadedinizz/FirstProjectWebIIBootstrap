@@ -37,6 +37,7 @@ function getVisibleImages() {
     return Array.from(document.querySelectorAll(".gallery-item:not(.hidden) .gallery-img"));
 }
 
+// depois mudar de global para objeto state
 let currentIndex = 0;
 let currentImages = [];
 
@@ -66,6 +67,7 @@ function updateModal() {
 }
 
 // navegação
+// transformar depois em um única função
 function nextImage() {
     currentIndex = (currentIndex + 1) % currentImages.length;
     updateModal();
@@ -113,7 +115,7 @@ function createRain() {
     drop.classList.add("rain-drop");
 
     drop.style.left = Math.random() * 100 + "vw";
-    drop.style.animationDuration = (1 + Math.random()) + "s";
+    drop.style.animationDuration = (0.5 + Math.random()) + "s";
 
     container.appendChild(drop);
     setTimeout(() => drop.remove(), 2000);
